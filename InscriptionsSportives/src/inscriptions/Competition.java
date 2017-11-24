@@ -142,7 +142,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	}
 
 	/**
-	 * Désinscrit un candidat.
+	 * Désinscrit un candidat.	
 	 * @param candidat
 	 * @return
 	 */
