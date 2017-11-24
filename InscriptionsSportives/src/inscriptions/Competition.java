@@ -118,10 +118,14 @@ public class Competition implements Comparable<Competition>, Serializable
 	public boolean add(Personne personne)
 	{
 		// TODO vérifier que la date de clôture n'est pas passée
+		if(dateCloture.isAfter(dateSystem)) {
 		if (enEquipe)
 			throw new RuntimeException();
 		personne.add(this);
 		return candidats.add(personne);
+		}
+		else 
+			return false;
 	}
 
 	/**
@@ -132,13 +136,18 @@ public class Competition implements Comparable<Competition>, Serializable
 	 * @return
 	 */
 
-	public boolean add(Equipe equipe)
+	public boolean add(Equipe equipe) 
 	{
 		// TODO vérifier que la date de clôture n'est pas passée
-		if (!enEquipe)
-			throw new RuntimeException();
-		equipe.add(this);
-		return candidats.add(equipe);
+			if(dateCloture.isAfter(dateSystem)) {
+			if (!enEquipe)
+				throw new RuntimeException();
+			equipe.add(this);
+			return candidats.add(equipe);
+			}
+			else
+				return false;
+
 	}
 
 	/**
@@ -175,4 +184,8 @@ public class Competition implements Comparable<Competition>, Serializable
 	{
 		return getNom();
 	}
+	
 }
+
+
+
