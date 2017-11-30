@@ -18,9 +18,9 @@ public class Competition implements Comparable<Competition>, Serializable
 	private Inscriptions inscriptions;
 	private String nom;
 	private Set<Candidat> candidats;
-	private LocalDate dateCloture;
+	public LocalDate dateCloture;
 	private boolean enEquipe = false;
-	LocalDate dateSystem = LocalDate.now();
+	private LocalDate dateSystem = LocalDate.now();
 
 	Competition(Inscriptions inscriptions, String nom, LocalDate dateCloture, boolean enEquipe)
 	{
@@ -94,7 +94,11 @@ public class Competition implements Comparable<Competition>, Serializable
 	public void setDateCloture(LocalDate dateCloture)
 	{
 		// TODO vérifier que l'on avance pas la date.
-		this.dateCloture = dateCloture;
+		if(this.dateCloture.isBefore(dateCloture)){
+			this.dateCloture = dateCloture;
+		}else {
+			throw new RuntimeException("Vous ne pouvez pas avancer la date.");
+		}
 	}
 	
 	/**
@@ -172,7 +176,7 @@ public class Competition implements Comparable<Competition>, Serializable
 			remove(candidat);
 		inscriptions.remove(this);
 	}
-	
+
 	@Override
 	public int compareTo(Competition o)
 	{
