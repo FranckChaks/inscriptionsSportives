@@ -1,4 +1,4 @@
-package inscriptions;
+package test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,13 +7,18 @@ import java.time.LocalDate;
 
 import org.junit.jupiter.api.Test;
 
+import inscriptions.Competition;
+import inscriptions.Equipe;
+import inscriptions.Inscriptions;
+import inscriptions.Personne;
+
 class TestsJUnit {
 	
-	private LocalDate ld = LocalDate.now();
-	private Inscriptions inscriptions = Inscriptions.getInscriptions();
-	private Competition comp = new Competition(inscriptions, "ESL Tour", ld, true );
-	private Equipe equipe = new Equipe(inscriptions, "Les Manouches");
-	private Personne personne = new Personne(inscriptions,"Lopez", "Joe","lopezjoe@manouche.fr");
+	LocalDate ld = LocalDate.now();
+	Inscriptions inscriptions = Inscriptions.getInscriptions();
+	Competition comp = inscriptions.createCompetition("ESL Tour", ld, true );
+	Equipe equipe = inscriptions.createEquipe("Les Manouches");
+	Personne personne = inscriptions.createPersonne("Lopez", "Joe","lopezjoe@manouche.fr");
 	
 	@Test
 	public void testCompetition() {
@@ -31,6 +36,21 @@ class TestsJUnit {
 		assertEquals("Nom de la personne", "Lopez","");
 		assertEquals("Prénom de la personne", "Joe", personne.getPrenom());
 		assertEquals("Email de la personne","lopezjoe@manouche.fr", personne.getMail());
+	}
+	
+	@Test
+	void testDelete() {
+		fail("Erreur");
+	}
+
+	@Test
+	void testAddEquipe() {
+		fail("Erreur");
+	}
+
+	@Test
+	void testRemoveEquipe() {
+		fail("Erreur");
 	}
 
 }
