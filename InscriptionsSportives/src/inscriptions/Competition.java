@@ -191,6 +191,11 @@ public class Competition implements Comparable<Competition>, Serializable
 	}
 	
 	class handleExceptionCompetition extends RuntimeException{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = -2928887103262954985L;
+
 		@Override
 		public String toString()
 		{
