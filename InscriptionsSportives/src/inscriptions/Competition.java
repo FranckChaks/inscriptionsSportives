@@ -1,8 +1,8 @@
 package inscriptions;
 
 import java.io.Serializable;
-import java.util.Collections;
 import java.time.LocalDate;
+import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -21,7 +21,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	public LocalDate dateCloture;
 	private boolean enEquipe = false;
 	private LocalDate dateSystem = LocalDate.now();
-
+	
 	Competition(Inscriptions inscriptions, String nom, LocalDate dateCloture, boolean enEquipe)
 	{
 		this.enEquipe = enEquipe;
@@ -55,6 +55,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	 * faux si les inscriptions sont closes.
 	 * @return
 	 */
+
 	
 	public boolean inscriptionsOuvertes()
 	{
@@ -91,13 +92,13 @@ public class Competition implements Comparable<Competition>, Serializable
 	 * @param dateCloture
 	 */
 	
-	public void setDateCloture(LocalDate dateCloture)
+	public void setDateCloture(LocalDate dateCloture) throws handleExceptionCompetition
 	{
 		// TODO vérifier que l'on avance pas la date.
 		if(this.dateCloture.isBefore(dateCloture)){
 			this.dateCloture = dateCloture;
 		}else {
-			throw new RuntimeException("Vous ne pouvez pas avancer la date.");
+			throw new handleExceptionCompetition();
 		}
 	}
 	
@@ -187,6 +188,14 @@ public class Competition implements Comparable<Competition>, Serializable
 	public String toString()
 	{
 		return getNom();
+	}
+	
+	class handleExceptionCompetition extends RuntimeException{
+		@Override
+		public String toString()
+		{
+			return "Vous ne pouvez pas avancer la date";
+		}
 	}
 	
 }
