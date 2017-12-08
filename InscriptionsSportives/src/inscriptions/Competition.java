@@ -20,7 +20,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	private Set<Candidat> candidats;
 	public LocalDate dateCloture;
 	private boolean enEquipe = false;
-	private LocalDate dateSystem = LocalDate.now();
+	public LocalDate dateSystem = LocalDate.now();
 	
 	Competition(Inscriptions inscriptions, String nom, LocalDate dateCloture, boolean enEquipe)
 	{
@@ -60,7 +60,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	public boolean inscriptionsOuvertes()
 	{
 		// TODO retourner vrai si et seulement si la date système est antérieure à la date de clôture.
-		if(dateSystem.isBefore(dateCloture))
+		if(dateCloture.isAfter(dateSystem))
 			return true;
 		else
 			return false;
@@ -123,7 +123,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	public boolean add(Personne personne)
 	{
 		// TODO vérifier que la date de clôture n'est pas passée
-		if(dateCloture.isAfter(dateSystem)) {
+		if(dateCloture.isAfter(LocalDate.now())) {
 		if (enEquipe)
 			throw new RuntimeException();
 		personne.add(this);

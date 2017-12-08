@@ -87,8 +87,7 @@ public class Inscriptions implements Serializable
 	 * @return
 	 */
 	
-	public Competition createCompetition(String nom, 
-			LocalDate dateCloture, boolean enEquipe)
+	public Competition createCompetition(String nom, LocalDate dateCloture, boolean enEquipe)
 	{
 		Competition competition = new Competition(this, nom, dateCloture, enEquipe);
 		competitions.add(competition);
@@ -242,7 +241,7 @@ public class Inscriptions implements Serializable
 	public static void main(String[] args)
 	{
 		Inscriptions inscriptions = Inscriptions.getInscriptions();
-		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", null, false);
+		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", LocalDate.now(), false); //LocalDate.now() = DateCloture
 		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"), 
 				boris = inscriptions.createPersonne("Boris", "le Hachoir", "ytreza");
 		flechettes.add(tony);
