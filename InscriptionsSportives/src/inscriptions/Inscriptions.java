@@ -260,6 +260,7 @@ public class Inscriptions implements Serializable
 		helloMenu.add(personneMenu);
 		helloMenu.addQuit("q");
 		
+		/////////////---MENU DES COMPETITIONS---\\\\\\\\\\
 		
 		competitionMenu.add(
 			
@@ -268,7 +269,7 @@ public class Inscriptions implements Serializable
 					public void optionSelected()
 					{
 						System.out.println("test");
-						competitionMenu.add(createCompetition());
+						competitionMenu.add(createCompetition);		//TODO
 					}
 			})); 
 		
@@ -278,7 +279,7 @@ public class Inscriptions implements Serializable
 				public void optionSelected()
 				{
 					System.out.println("test");
-					competitionMenu.add(removeCompetition());
+					competitionMenu.add(removeCompetition());	//TODO
 				}
 				
 			}));
@@ -289,17 +290,88 @@ public class Inscriptions implements Serializable
 					public void optionSelected()
 					{
 						System.out.println("test");
-						competitionMenu.add(deleteCompetition());
+						competitionMenu.add(deleteCompetition());	//TODO
 					}
 					
 				}));
 		
 		competitionMenu.addBack("4");
 		
+		/////////////---MENU DES EQUIPES---\\\\\\\\\\
+		
+		equipeMenu.add(
+				
+				new Option("Ajouter une équipe", "1", new Action()
+				{
+						public void optionSelected()
+						{
+							System.out.println("test");
+							equipeMenu.add(createEquipe);	//TODO
+						}
+				})); 
+		
+		equipeMenu.add(
+				
+				new Option("Modifier une équipe", "2", new Action()
+				{
+						public void optionSelected()
+						{
+							System.out.println("test");
+							equipeMenu.add(modifEquipe);		//TODO
+						}
+				})); 
+		
+		equipeMenu.add(
+				
+				new Option("Supprimer une équipe", "3", new Action()
+				{
+						public void optionSelected()
+						{
+							System.out.println("test");
+							equipeMenu.add(deleteEquipe);		//TODO
+						}
+				})); 
+		
+		equipeMenu.addBack("4");
+		
+		/////////////---MENU DES PERSONNES---\\\\\\\\\\
+		
+		personneMenu.add(
+				new Option("Ajouter une personne", "1", new Action()
+				{
+						public void optionSelected()
+						{
+							System.out.println("test");
+							personneMenu.add(createPersonne);	//TODO
+						}
+				})); 
+		
+		personneMenu.add(
+				new Option("Modifier une personne", "2", new Action()
+				{
+						public void optionSelected()
+						{
+							System.out.println("test");
+							personneMenu.add(modifPersonne);	//TODO
+						}
+				})); 
+				
+		personneMenu.add(
+				new Option("Supprimer une personne", "3", new Action()
+				{
+						public void optionSelected()
+						{
+							System.out.println("test");
+							personneMenu.add(deletePersonne);	//TODO
+						}
+				})); 
+				
+				personneMenu.addBack("4");
+
 
 		helloMenu.start();
 		
-		////////////////---\\\\\\\\\\\\\\\\\\
+		////////////////--FIN MENU--\\\\\\\\\\\\\\\\\\
 		
 		System.out.println(inscriptions);
 		lesManouches.delete();
