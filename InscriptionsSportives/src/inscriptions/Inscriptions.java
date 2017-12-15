@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.util.SortedSet;
 import java.util.TreeSet;
 import commandLineMenus.*;
+import client.MenuInscription; 
 /**
  * Point d'entrÃ©e dans l'application, un seul objet de type Inscription
  * permet de gÃ©rer les compÃ©titions, candidats (de type equipe ou personne)
@@ -251,127 +252,10 @@ public class Inscriptions implements Serializable
 		
 		//////////////---MENU---\\\\\\\\\\\\\\\
 		
-		Menu helloMenu = new Menu("Inscriptions Sportives");
-		Menu competitionMenu = new Menu("Menu des compétition", "Competition", "c");
-		Menu equipeMenu = new Menu("Menu des équipes", "Equipe", "e");
-		Menu personneMenu = new Menu("Menu des personnes", "Personne", "p");
-		helloMenu.add(competitionMenu);
-		helloMenu.add(equipeMenu);
-		helloMenu.add(personneMenu);
-		helloMenu.addQuit("q");
+		Menu menu = new getHelloMenu();
+		menu.start();
 		
-		/////////////---MENU DES COMPETITIONS---\\\\\\\\\\
-		
-		competitionMenu.add(
-			
-			new Option("Créer une compétition", "1", new Action()
-			{
-					public void optionSelected()
-					{
-						System.out.println("test");
-						competitionMenu.add(createCompetition);		//TODO
-					}
-			})); 
-		
-		competitionMenu.add(
-			new Option("Modifier une compétition", "2", new Action()
-			{
-				public void optionSelected()
-				{
-					System.out.println("test");
-					competitionMenu.add(removeCompetition());	//TODO
-				}
-				
-			}));
-		
-		competitionMenu.add(
-				new Option("Supprimer une compétition", "3", new Action()
-				{
-					public void optionSelected()
-					{
-						System.out.println("test");
-						competitionMenu.add(deleteCompetition());	//TODO
-					}
-					
-				}));
-		
-		competitionMenu.addBack("4");
-		
-		/////////////---MENU DES EQUIPES---\\\\\\\\\\
-		
-		equipeMenu.add(
-				
-				new Option("Ajouter une équipe", "1", new Action()
-				{
-						public void optionSelected()
-						{
-							System.out.println("test");
-							equipeMenu.add(createEquipe);	//TODO
-						}
-				})); 
-		
-		equipeMenu.add(
-				
-				new Option("Modifier une équipe", "2", new Action()
-				{
-						public void optionSelected()
-						{
-							System.out.println("test");
-							equipeMenu.add(modifEquipe);		//TODO
-						}
-				})); 
-		
-		equipeMenu.add(
-				
-				new Option("Supprimer une équipe", "3", new Action()
-				{
-						public void optionSelected()
-						{
-							System.out.println("test");
-							equipeMenu.add(deleteEquipe);		//TODO
-						}
-				})); 
-		
-		equipeMenu.addBack("4");
-		
-		/////////////---MENU DES PERSONNES---\\\\\\\\\\
-		
-		personneMenu.add(
-				new Option("Ajouter une personne", "1", new Action()
-				{
-						public void optionSelected()
-						{
-							System.out.println("test");
-							personneMenu.add(createPersonne);	//TODO
-						}
-				})); 
-		
-		personneMenu.add(
-				new Option("Modifier une personne", "2", new Action()
-				{
-						public void optionSelected()
-						{
-							System.out.println("test");
-							personneMenu.add(modifPersonne);	//TODO
-						}
-				})); 
-				
-		personneMenu.add(
-				new Option("Supprimer une personne", "3", new Action()
-				{
-						public void optionSelected()
-						{
-							System.out.println("test");
-							personneMenu.add(deletePersonne);	//TODO
-						}
-				})); 
-				
-				personneMenu.addBack("4");
-
-
-		helloMenu.start();
-		
-		////////////////--FIN MENU--\\\\\\\\\\\\\\\\\\
+		/////////////---FIN MENU---\\\\\\\\\\\\\
 		
 		System.out.println(inscriptions);
 		lesManouches.delete();
