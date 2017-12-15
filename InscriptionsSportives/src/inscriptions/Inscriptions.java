@@ -252,8 +252,8 @@ public class Inscriptions implements Serializable
 		
 		//////////////---MENU---\\\\\\\\\\\\\\\
 		
-		Menu menu = new getHelloMenu();
-		menu.start();
+		Menu menu = MenuInscription.getHelloMenu();
+		menu.start(); 
 		
 		/////////////---FIN MENU---\\\\\\\\\\\\\
 		

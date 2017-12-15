@@ -5,7 +5,7 @@ import inscriptions.*;
 
 public class MenuInscription {
 	
-	static Menu getHelloMenu() {
+	public static Menu getHelloMenu() {
 		Menu helloMenu = new Menu("Inscriptions Sportives");
 		
 		Menu equipeMenu = new Menu("Menu des équipes", "Equipe", "e");
