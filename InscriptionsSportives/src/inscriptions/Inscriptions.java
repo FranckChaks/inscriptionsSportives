@@ -249,50 +249,57 @@ public class Inscriptions implements Serializable
 		lesManouches.add(boris);
 		lesManouches.add(tony);
 		
-	//////////////MENU\\\\\\\\\\\\\\\
+		//////////////---MENU---\\\\\\\\\\\\\\\
 		
 		Menu helloMenu = new Menu("Inscriptions Sportives");
-		Option competitionOption = new Option("Compétition", "1");
-		Option equipeOption = new Option("Equipe", "2");
-		Option personneOption = new Option("Personne", "3");
-		helloMenu.add(competitionOption);
-		helloMenu.add(equipeOption);
-		helloMenu.add(personneOption);
+		Menu competitionMenu = new Menu("Menu des compétition", "Competition", "c");
+		Menu equipeMenu = new Menu("Menu des équipes", "Equipe", "e");
+		Menu personneMenu = new Menu("Menu des personnes", "Personne", "p");
+		helloMenu.add(competitionMenu);
+		helloMenu.add(equipeMenu);
+		helloMenu.add(personneMenu);
 		helloMenu.addQuit("q");
 		
-		Action competitionAction = new Action()
-		{
-			@Override
-			public void optionSelected()
-			{
-				System.out.println("Hello!");
-			}
-		};
 		
-		Action equipeAction = new Action()
-		{
-			@Override
-			public void optionSelected()
+		competitionMenu.add(
+			
+			new Option("Créer une compétition", "1", new Action()
 			{
-				System.out.println("Hello!");
-			}
-		};
+					public void optionSelected()
+					{
+						System.out.println("test");
+						competitionMenu.add(createCompetition());
+					}
+			})); 
 		
-		Action personneAction = new Action()
-		{
-			@Override
-			public void optionSelected()
+		competitionMenu.add(
+			new Option("Modifier une compétition", "2", new Action()
 			{
-				System.out.println("Hello!");
-			}
-		};
+				public void optionSelected()
+				{
+					System.out.println("test");
+					competitionMenu.add(removeCompetition());
+				}
+				
+			}));
 		
-		competitionOption.setAction(competitionAction);
-		equipeOption.setAction(equipeAction);
-		personneOption.setAction(personneAction);
+		competitionMenu.add(
+				new Option("Supprimer une compétition", "3", new Action()
+				{
+					public void optionSelected()
+					{
+						System.out.println("test");
+						competitionMenu.add(deleteCompetition());
+					}
+					
+				}));
+		
+		competitionMenu.addBack("4");
+		
+
 		helloMenu.start();
 		
-	////////////////\\\\\\\\\\\\\\\\\\
+		////////////////---\\\\\\\\\\\\\\\\\\
 		
 		System.out.println(inscriptions);
 		lesManouches.delete();
