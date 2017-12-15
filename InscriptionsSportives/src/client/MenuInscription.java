@@ -7,12 +7,9 @@ public class MenuInscription {
 	
 	public static Menu getHelloMenu() {
 		Menu helloMenu = new Menu("Inscriptions Sportives");
-		
-		Menu equipeMenu = new Menu("Menu des équipes", "Equipe", "e");
-		Menu personneMenu = new Menu("Menu des personnes", "Personne", "p");
 		helloMenu.add(getCompetitionMenu()); 
-		helloMenu.add(equipeMenu);
-		helloMenu.add(personneMenu);
+		helloMenu.add(getEquipeMenu());
+		helloMenu.add(getPersonneMenu());
 		helloMenu.addQuit("q");
 		return helloMenu;
 	}
@@ -67,8 +64,8 @@ public class MenuInscription {
 	//-----------Menu gestion compétition----------\\
 	static Menu getGestionCompetitionMenu() {
 		Menu gestionCompetition = new Menu("Gestion des compétitions", "Gestion des compétitions","3");
-		gestionCompetition.add(getDeleteCompOption);
-		gestionCompetition.add(getRemoveCompOption);
+		gestionCompetition.add(getDeleteCompOption());
+		gestionCompetition.add(getRemoveCompOption());
 		gestionCompetition.addBack("3");
 		return gestionCompetition;
 	}
