@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.time.LocalDate;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
+import commandLineMenus.*;
 /**
  * Point d'entrée dans l'application, un seul objet de type Inscription
  * permet de gérer les compétitions, candidats (de type equipe ou personne)
@@ -248,6 +248,52 @@ public class Inscriptions implements Serializable
 		Equipe lesManouches = inscriptions.createEquipe("Les Manouches");
 		lesManouches.add(boris);
 		lesManouches.add(tony);
+		
+	//////////////MENU\\\\\\\\\\\\\\\
+		
+		Menu helloMenu = new Menu("Inscriptions Sportives");
+		Option competitionOption = new Option("Comp�tition", "1");
+		Option equipeOption = new Option("Equipe", "2");
+		Option personneOption = new Option("Personne", "3");
+		helloMenu.add(competitionOption);
+		helloMenu.add(equipeOption);
+		helloMenu.add(personneOption);
+		helloMenu.addQuit("q");
+		
+		Action competitionAction = new Action()
+		{
+			@Override
+			public void optionSelected()
+			{
+				System.out.println("Hello!");
+			}
+		};
+		
+		Action equipeAction = new Action()
+		{
+			@Override
+			public void optionSelected()
+			{
+				System.out.println("Hello!");
+			}
+		};
+		
+		Action personneAction = new Action()
+		{
+			@Override
+			public void optionSelected()
+			{
+				System.out.println("Hello!");
+			}
+		};
+		
+		competitionOption.setAction(competitionAction);
+		equipeOption.setAction(equipeAction);
+		personneOption.setAction(personneAction);
+		helloMenu.start();
+		
+	////////////////\\\\\\\\\\\\\\\\\\
+		
 		System.out.println(inscriptions);
 		lesManouches.delete();
 		System.out.println(inscriptions);
