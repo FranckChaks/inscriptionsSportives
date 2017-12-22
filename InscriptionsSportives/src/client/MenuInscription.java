@@ -1,9 +1,16 @@
 package client;
 
+import java.time.LocalDate;
+import java.util.Scanner;
+
 import commandLineMenus.*;
+import commandLineMenus.rendering.examples.util.InOut;
 import inscriptions.*;
 
 public class MenuInscription {
+	
+	static Scanner sc = new Scanner(System.in);
+
 	
 	public static Menu getHelloMenu() {
 		Menu helloMenu = new Menu("Inscriptions Sportives");
@@ -16,7 +23,7 @@ public class MenuInscription {
 //--------------MENU COMPETITION-------------\\
 //--------------------------------------------\\
 	static Menu getCompetitionMenu() {
-		Menu competitionMenu = new Menu("Menu des compétition", "Competition", "c");
+		Menu competitionMenu = new Menu("Menu des compétitions", "Competition", "c");
 		competitionMenu.add(getAddCompOption());
 		competitionMenu.add(getDisplayCompOption());
 		competitionMenu.add(getGestionCompetitionMenu());
@@ -38,7 +45,19 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				competitionMenu.add(Inscriptions.createCompetition();	//TODO
+				String a = InOut.getString("Nom de la compétition: ");
+				System.out.println("Date de cloture \n");
+				int jour = InOut.getInt("Jour: ");
+				int mois = InOut.getInt("Mois: ");
+				int annee = InOut.getInt("Année: ");
+				int c = InOut.getInt("En équipe (0 pour Non, 1 pour oui)? ");
+				boolean d = false;
+				if(c == 1)
+					d = true;
+				else if(c != 0 && c != 1 )
+					System.out.println("Erreur de saisie, veuillez entrer 1 ou 0.");
+				LocalDate dateCloture = LocalDate.of(annee, mois, jour);
+				Inscriptions.getInscriptions().createCompetition(a, dateCloture, d);	
 			}
 		};
 	}
@@ -136,7 +155,8 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				equipeMenu.add(Inscriptions.createEquipe(nom));	//TODO
+				String a = InOut.getString("Nom de l'équipe: ");
+				Inscriptions.getInscriptions().createEquipe(a);	//TODO
 			}
 		};
 	}
@@ -232,7 +252,10 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-					persMenu.add(createPersonne);	//TODO
+					String a = InOut.getString("Nom de la personne: ");
+					String b = InOut.getString("Prénom de la personne: ");
+					String c = InOut.getString("Adresse e-mail de la personne: ");
+					Inscriptions.getInscriptions().createPersonne(a, b, c);	
 				}
 			};
 		}
@@ -257,9 +280,9 @@ public class MenuInscription {
 		}
 		//-----------Menu gestion personne----------\\
 		static Menu getGestionPersMenu() {
-			Menu gestionPers = new Menu("Gestion des équipes", "Gestion des équipes","3");
-			gestionPers.add(getDeleteEquipeOption());
-			gestionPers.add(getModifyEquipeOption());
+			Menu gestionPers = new Menu("Gestion des personnes", "Gestion des personnes","3");
+			gestionPers.add(getDeletePersOption());
+			gestionPers.add(getModifyPersOption());
 			gestionPers.addBack("3");
 			return gestionPers;
 		}
