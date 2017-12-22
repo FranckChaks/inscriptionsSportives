@@ -183,7 +183,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	{
 		return getNom().compareTo(o.getNom());
 	}
-	
+
 	@Override
 	public String toString()
 	{

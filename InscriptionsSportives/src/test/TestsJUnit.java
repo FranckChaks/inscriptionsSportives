@@ -1,11 +1,12 @@
 package test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
+
 import java.util.Set;
 import java.util.TreeSet;
 
 import java.time.LocalDate;
-
 import org.junit.jupiter.api.Test;
 
 import inscriptions.Competition;
@@ -31,9 +32,10 @@ class TestsJUnit {
 	@Test
 	public void testCompetition() {
 		assertEquals("Nom de la compétition", "ESL Tour", comp.getNom());
-		assertEquals("Date de cloture de la compétition", ld, comp.getDateCloture());
+		assertEquals("Date de closure de la compétition",ld, comp.getDateCloture());
 	}
-	
+
+
 	@Test
 	public void testEquipe() {
 		assertEquals("Nom de l'équipe", "Les Manouches", equipe.getNom());
