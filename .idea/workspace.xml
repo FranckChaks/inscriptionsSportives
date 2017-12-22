@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4284ce5f-84f7-4024-9a13-0996e24e8563" name="Default" comment="first commit IntellIJ">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommandLine/CommandLine.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_5_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inscriptionsSportives.iml" afterPath="$PROJECT_DIR$/.idea/inscriptionsSportives.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="4284ce5f-84f7-4024-9a13-0996e24e8563" name="Default" comment="Ajout de listPersonne">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/client/listEquipe.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/test/TestsJUnit.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/test/TestsJUnit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inscriptionssportive.sql" afterPath="$PROJECT_DIR$/inscriptionssportive.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listPersonne.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="listPersonne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+            <state relative-caret-position="-1582">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#891#892#0" expanded="true" />
@@ -67,6 +61,38 @@
                 <element signature="e#1339#1340#0" expanded="true" />
                 <element signature="e#1945#1946#0" expanded="true" />
                 <element signature="e#2046#2047#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listEquipe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listEquipe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+              <folding>
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+                <element signature="e#1947#1948#0" expanded="true" />
+                <element signature="e#2050#2051#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listCompetition.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="63" column="71" lean-forward="false" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
+              <folding>
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#956#957#0" expanded="true" />
+                <element signature="e#1307#1308#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,18 +123,26 @@
       <file leaf-file-name="MenuInscription.java" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1482">
-              <caret line="282" column="94" lean-forward="false" selection-start-line="282" selection-start-column="94" selection-end-line="282" selection-end-column="94" />
+            <state relative-caret-position="416">
+              <caret line="109" column="27" lean-forward="false" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
               <folding>
-                <marker date="1513941486322" expanded="true" signature="7117:7173" ph="{...}" />
-                <marker date="1513941486322" expanded="true" signature="7253:7367" ph="{...}" />
-                <marker date="1513941486322" expanded="true" signature="7403:7528" ph="{...}" />
-                <marker date="1513941486322" expanded="true" signature="7431:7523" ph="{...}" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2138#2139#0" expanded="true" />
+                <element signature="e#2195#2196#0" expanded="true" />
+                <element signature="e#2866#2867#0" expanded="true" />
+                <element signature="e#2925#2926#0" expanded="true" />
+                <element signature="e#3237#3238#0" expanded="true" />
+                <element signature="e#3296#3297#0" expanded="true" />
+                <element signature="e#4460#4461#0" expanded="true" />
+                <element signature="e#4507#4508#0" expanded="true" />
+                <element signature="e#5123#5124#0" expanded="true" />
+                <element signature="e#5172#5173#0" expanded="true" />
+                <element signature="e#5469#5470#0" expanded="true" />
+                <element signature="e#5518#5519#0" expanded="true" />
+                <element signature="e#6803#6804#0" expanded="true" />
+                <element signature="e#6848#6849#0" expanded="true" />
                 <marker date="1513941486322" expanded="false" signature="7465:7477" ph=" { " />
                 <marker date="1513941486322" expanded="false" signature="7512:7518" ph=" }" />
-                <marker date="1513941486322" expanded="true" signature="7609:7724" ph="{...}" />
-                <marker date="1513941486322" expanded="true" signature="7760:7885" ph="{...}" />
-                <marker date="1513941486322" expanded="true" signature="7788:7880" ph="{...}" />
                 <marker date="1513941486322" expanded="false" signature="7822:7834" ph=" { " />
                 <marker date="1513941486322" expanded="false" signature="7869:7875" ph=" }" />
               </folding>
@@ -125,6 +159,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>someone</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -149,6 +188,8 @@
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/persMenu.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/listEquipe.java" />
       </list>
     </option>
   </component>
@@ -183,10 +224,6 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="inscriptionsSportives" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommandLine" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="inscriptionsSportives" type="b2602c69:ProjectViewProjectNode" />
               <item name="inscriptionsSportives" type="462c0819:PsiDirectoryNode" />
@@ -236,7 +273,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Compte bancaire/src" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -246,6 +283,11 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+  </component>
+  <component name="Push.Settings">
+    <excluded-roots>
+      <path value="$PROJECT_DIR$/../CommandLine" />
+    </excluded-roots>
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -628,11 +670,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510933912831</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajout de listPersonne">
+      <created>1513941536311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513941536311</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22428000" />
+    <option name="totallyTimeSpent" value="24045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -725,7 +774,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit IntellIJ" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit IntellIJ" />
+    <MESSAGE value="Ajout de listPersonne" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de listPersonne" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -763,15 +813,23 @@
         <state relative-caret-position="936">
           <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
-            <marker date="1513941486322" expanded="true" signature="7117:7173" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7253:7367" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7403:7528" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7431:7523" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#3237#3238#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#4460#4461#0" expanded="true" />
+            <element signature="e#4507#4508#0" expanded="true" />
+            <element signature="e#5123#5124#0" expanded="true" />
+            <element signature="e#5172#5173#0" expanded="true" />
+            <element signature="e#5469#5470#0" expanded="true" />
+            <element signature="e#5518#5519#0" expanded="true" />
+            <element signature="e#6803#6804#0" expanded="true" />
+            <element signature="e#6848#6849#0" expanded="true" />
             <marker date="1513941486322" expanded="false" signature="7465:7477" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7512:7518" ph=" }" />
-            <marker date="1513941486322" expanded="true" signature="7609:7724" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7760:7885" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7788:7880" ph="{...}" />
             <marker date="1513941486322" expanded="false" signature="7822:7834" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7869:7875" ph=" }" />
           </folding>
@@ -825,15 +883,23 @@
         <state relative-caret-position="126">
           <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding>
-            <marker date="1513941486322" expanded="true" signature="7117:7173" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7253:7367" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7403:7528" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7431:7523" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#3237#3238#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#4460#4461#0" expanded="true" />
+            <element signature="e#4507#4508#0" expanded="true" />
+            <element signature="e#5123#5124#0" expanded="true" />
+            <element signature="e#5172#5173#0" expanded="true" />
+            <element signature="e#5469#5470#0" expanded="true" />
+            <element signature="e#5518#5519#0" expanded="true" />
+            <element signature="e#6803#6804#0" expanded="true" />
+            <element signature="e#6848#6849#0" expanded="true" />
             <marker date="1513941486322" expanded="false" signature="7465:7477" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7512:7518" ph=" }" />
-            <marker date="1513941486322" expanded="true" signature="7609:7724" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7760:7885" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7788:7880" ph="{...}" />
             <marker date="1513941486322" expanded="false" signature="7822:7834" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7869:7875" ph=" }" />
           </folding>
@@ -871,15 +937,23 @@
         <state relative-caret-position="630">
           <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding>
-            <marker date="1513941486322" expanded="true" signature="7117:7173" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7253:7367" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7403:7528" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7431:7523" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#3237#3238#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#4460#4461#0" expanded="true" />
+            <element signature="e#4507#4508#0" expanded="true" />
+            <element signature="e#5123#5124#0" expanded="true" />
+            <element signature="e#5172#5173#0" expanded="true" />
+            <element signature="e#5469#5470#0" expanded="true" />
+            <element signature="e#5518#5519#0" expanded="true" />
+            <element signature="e#6803#6804#0" expanded="true" />
+            <element signature="e#6848#6849#0" expanded="true" />
             <marker date="1513941486322" expanded="false" signature="7465:7477" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7512:7518" ph=" }" />
-            <marker date="1513941486322" expanded="true" signature="7609:7724" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7760:7885" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7788:7880" ph="{...}" />
             <marker date="1513941486322" expanded="false" signature="7822:7834" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7869:7875" ph=" }" />
           </folding>
@@ -933,15 +1007,23 @@
         <state relative-caret-position="2919">
           <caret line="155" column="40" lean-forward="true" selection-start-line="155" selection-start-column="40" selection-end-line="155" selection-end-column="40" />
           <folding>
-            <marker date="1513941486322" expanded="true" signature="7117:7173" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7253:7367" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7403:7528" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7431:7523" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#3237#3238#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#4460#4461#0" expanded="true" />
+            <element signature="e#4507#4508#0" expanded="true" />
+            <element signature="e#5123#5124#0" expanded="true" />
+            <element signature="e#5172#5173#0" expanded="true" />
+            <element signature="e#5469#5470#0" expanded="true" />
+            <element signature="e#5518#5519#0" expanded="true" />
+            <element signature="e#6803#6804#0" expanded="true" />
+            <element signature="e#6848#6849#0" expanded="true" />
             <marker date="1513941486322" expanded="false" signature="7465:7477" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7512:7518" ph=" }" />
-            <marker date="1513941486322" expanded="true" signature="7609:7724" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7760:7885" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7788:7880" ph="{...}" />
             <marker date="1513941486322" expanded="false" signature="7822:7834" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7869:7875" ph=" }" />
           </folding>
@@ -1106,18 +1188,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="282" column="94" lean-forward="false" selection-start-line="282" selection-start-column="94" selection-end-line="282" selection-end-column="94" />
+        <state relative-caret-position="416">
+          <caret line="109" column="27" lean-forward="false" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
           <folding>
-            <marker date="1513941486322" expanded="true" signature="7117:7173" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7253:7367" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7403:7528" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7431:7523" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#3237#3238#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#4460#4461#0" expanded="true" />
+            <element signature="e#4507#4508#0" expanded="true" />
+            <element signature="e#5123#5124#0" expanded="true" />
+            <element signature="e#5172#5173#0" expanded="true" />
+            <element signature="e#5469#5470#0" expanded="true" />
+            <element signature="e#5518#5519#0" expanded="true" />
+            <element signature="e#6803#6804#0" expanded="true" />
+            <element signature="e#6848#6849#0" expanded="true" />
             <marker date="1513941486322" expanded="false" signature="7465:7477" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7512:7518" ph=" }" />
-            <marker date="1513941486322" expanded="true" signature="7609:7724" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7760:7885" ph="{...}" />
-            <marker date="1513941486322" expanded="true" signature="7788:7880" ph="{...}" />
             <marker date="1513941486322" expanded="false" signature="7822:7834" ph=" { " />
             <marker date="1513941486322" expanded="false" signature="7869:7875" ph=" }" />
           </folding>
@@ -1126,8 +1216,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        <state relative-caret-position="-1582">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#891#892#0" expanded="true" />
@@ -1136,6 +1226,34 @@
             <element signature="e#1339#1340#0" expanded="true" />
             <element signature="e#1945#1946#0" expanded="true" />
             <element signature="e#2046#2047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listEquipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1947#1948#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="63" column="71" lean-forward="false" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
+          <folding>
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
           </folding>
         </state>
       </provider>

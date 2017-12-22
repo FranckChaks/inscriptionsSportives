@@ -81,11 +81,11 @@ CREATE TABLE IF NOT EXISTS `inscription` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `personne`
+-- Structure de la table `equipe`
 --
 
-DROP TABLE IF EXISTS `personne`;
-CREATE TABLE IF NOT EXISTS `personne` (
+DROP TABLE IF EXISTS `equipe`;
+CREATE TABLE IF NOT EXISTS `equipe` (
   `id_p` int(11) NOT NULL AUTO_INCREMENT,
   `prenom_p` varchar(255) DEFAULT NULL,
   `mail_p` varchar(255) DEFAULT NULL,
@@ -112,9 +112,9 @@ ALTER TABLE `inscription`
   ADD CONSTRAINT `FK_Inscription_id_comp` FOREIGN KEY (`id_comp`) REFERENCES `competition` (`id_comp`);
 
 --
--- Contraintes pour la table `personne`
+-- Contraintes pour la table `equipe`
 --
-ALTER TABLE `personne`
+ALTER TABLE `equipe`
   ADD CONSTRAINT `FK_Personne_id_cand` FOREIGN KEY (`id_cand`) REFERENCES `candidat` (`id_cand`);
 COMMIT;
 
