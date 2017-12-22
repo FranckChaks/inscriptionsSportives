@@ -38,7 +38,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				competitionMenu.add(createCompetition);	//TODO
+				competitionMenu.add(Inscriptions.createCompetition();	//TODO
 			}
 		};
 	}
@@ -65,7 +65,7 @@ public class MenuInscription {
 	static Menu getGestionCompetitionMenu() {
 		Menu gestionCompetition = new Menu("Gestion des compétitions", "Gestion des compétitions","3");
 		gestionCompetition.add(getDeleteCompOption());
-		gestionCompetition.add(getRemoveCompOption());
+		gestionCompetition.add(getModifyCompOption());
 		gestionCompetition.addBack("3");
 		return gestionCompetition;
 	}
@@ -89,19 +89,19 @@ public class MenuInscription {
 	}
 	
 	//------Modifier Compétition-------\\
-	static Option getRemoveCompOption()
+	static Option getModifyCompOption()
 	{
-		Option removeComp = new Option("Modifier une compétition","2",
-				getRemoveCompetition());
-		return removeComp;
+		Option modifyComp = new Option("Modifier une compétition","2",
+				getModifyCompetition());
+		return modifyComp;
 	}
 	
-	static Action getRemoveCompetition() {
+	static Action getModifyCompetition() {
 		return new Action()
 		{
 			public void optionSelected()
 			{
-				gestionCompetition.add(removeCompetition);	//TODO
+				gestionCompetition.add(modifyCompetition);	//TODO
 			}
 		};
 	}
@@ -136,7 +136,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				equipeMenu.add(createEquipe);	//TODO
+				equipeMenu.add(Inscriptions.createEquipe(nom));	//TODO
 			}
 		};
 	}
@@ -163,7 +163,7 @@ public class MenuInscription {
 	static Menu getGestionEquipeMenu() {
 		Menu gestionEquipe = new Menu("Gestion des équipes", "Gestion des équipes","3");
 		gestionEquipe.add(getDeleteEquipeOption());
-		gestionEquipe.add(getRemoveEquipeOption());
+		gestionEquipe.add(getModifyEquipeOption());
 		gestionEquipe.addBack("3");
 		return gestionEquipe;
 	}
@@ -187,19 +187,19 @@ public class MenuInscription {
 	}
 	
 	//------Modifier Equipe-------\\
-	static Option getRemoveEquipeOption()
+	static Option getModifyEquipeOption()
 	{
-		Option removeEquipe= new Option("Modifier une équipe","2",
-				getRemoveEquipe());
-		return removeEquipe;
+		Option modifyEquipe= new Option("Modifier une équipe","2",
+				getModifyEquipe());
+		return modifyEquipe;
 	}
 	
-	static Action getRemoveEquipe() {
+	static Action getModifyEquipe() {
 		return new Action()
 		{
 			public void optionSelected()
 			{
-				gestionEquipe.add(removeEquipe);	//TODO
+				gestionEquipe.add(modifyEquipe);	//TODO
 			}
 		};
 	}
@@ -259,7 +259,7 @@ public class MenuInscription {
 		static Menu getGestionPersMenu() {
 			Menu gestionPers = new Menu("Gestion des équipes", "Gestion des équipes","3");
 			gestionPers.add(getDeleteEquipeOption());
-			gestionPers.add(getRemoveEquipeOption());
+			gestionPers.add(getModifyEquipeOption());
 			gestionPers.addBack("3");
 			return gestionPers;
 		}
@@ -283,19 +283,19 @@ public class MenuInscription {
 		}
 		
 		//------Modifier Personne-------\\
-		static Option getRemovePersOption()
+		static Option getModifyPersOption()
 		{
-			Option removePers = new Option("Modifier une personne","2",
-					getRemoveEquipe());
-			return removePers;
+			Option modifyPers = new Option("Modifier une personne","2",
+					getModifyEquipe());
+			return modifyPers;
 		}
 		
-		static Action getRemovePers() {
+		static Action getModifyPers() {
 			return new Action()
 			{
 				public void optionSelected()
 				{
-					gestionPers.add(removePers);	//TODO
+					gestionPers.add(modifyPers);	//TODO
 				}
 			};
 		}
