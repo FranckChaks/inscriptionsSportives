@@ -46,10 +46,10 @@ public class MenuInscription {
 			public void optionSelected()
 			{
 				String a = InOut.getString("Nom de la compétition: ");
-				System.out.println("Date de cloture \n");
-				int jour = InOut.getInt("Jour: ");
-				int mois = InOut.getInt("Mois: ");
-				int annee = InOut.getInt("Année: ");
+				System.out.println("Date de cloture:");
+				int jour = InOut.getInt("	Jour: ");
+				int mois = InOut.getInt("	Mois: ");
+				int annee = InOut.getInt("	Année: ");
 				int c = InOut.getInt("En équipe (0 pour Non, 1 pour oui)? ");
 				boolean d = false;
 				if(c == 1)
@@ -76,7 +76,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				competitionMenu.add(displayCompetition);	//TODO
+				listCompetition(competition);	//TODO
 			}
 		};
 	}
@@ -102,7 +102,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				gestionCompetition.add(deleteCompetition);	//TODO
+				listCompetition(competition);
 			}
 		};
 	}
@@ -120,7 +120,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				gestionCompetition.add(modifyCompetition);	//TODO
+				listCompetition(competition);
 			}
 		};
 	}
@@ -156,7 +156,7 @@ public class MenuInscription {
 			public void optionSelected()
 			{
 				String a = InOut.getString("Nom de l'équipe: ");
-				Inscriptions.getInscriptions().createEquipe(a);	//TODO
+				Inscriptions.getInscriptions().createEquipe(a);	
 			}
 		};
 	}
@@ -175,7 +175,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				equipeMenu.add(displayEquipe);	//TODO
+				listEquipe(equipe);
 			}
 		};
 	}
@@ -201,7 +201,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				gestionEquipe.add(deleteEquipe);	//TODO
+				listEquipe(equipe);
 			}
 		};
 	}
@@ -219,7 +219,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				gestionEquipe.add(modifyEquipe);	//TODO
+				listEquipe(equipe);
 			}
 		};
 	}
@@ -274,7 +274,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-					persMenu.add(displayPers);	//TODO
+					listPersonne(personne);
 				}
 			};
 		}
@@ -300,7 +300,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-					gestionPers.add(deletePers);	//TODO
+					listPersonne(personne);
 				}
 			};
 		}
@@ -318,7 +318,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-					gestionPers.add(modifyPers);	//TODO
+					listPersonne(personne);
 				}
 			};
 		}

@@ -16,7 +16,7 @@ public class listEquipe {
     // Returns the list to print
     private List<String> getCompetitionList()
     {
-        List<String> liste = new List<>("SÃ©lectionner une Ã©quipe",
+        List<String> liste = new List<>("Sélectionner une équipe: ",
                 getListDataEquipe(),
                 getOptionListeEquipe());
         liste.setAutoBack(false);
@@ -56,6 +56,7 @@ public class listEquipe {
         Menu UneEquipeMenu = new Menu(UneEquipe);
         UneEquipeMenu.add(getDisplayUneEquipeOption(UneEquipe));
         UneEquipeMenu.add(getDeleteUneEquipeOption(UneEquipe));
+        UneEquipeMenu.addBack("b");
         UneEquipeMenu.setAutoBack(true);
         return UneEquipeMenu;
     }
@@ -87,5 +88,4 @@ public class listEquipe {
             }
         });
     }
-}
 }

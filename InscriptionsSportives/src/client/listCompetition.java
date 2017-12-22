@@ -16,7 +16,7 @@ public class listCompetition {
     // Returns the list to print
     private List<String> getCompetitionList()
     {
-        List<String> liste = new List<>("Sélectionner la compétition",
+        List<String> liste = new List<>("Sélectionner la comp�tition",
                 getListDataCompetition(),
                 getOptionListeCompetition());
         liste.setAutoBack(false);
@@ -56,6 +56,7 @@ public class listCompetition {
         Menu UneCompetitionMenu = new Menu(UneCompetition);
         UneCompetitionMenu.add(getDisplayUneCompetitionOption(UneCompetition));
         UneCompetitionMenu.add(getDeleteUneCompetitionOption(UneCompetition));
+        UneCompetitionMenu.addBack("b");
         UneCompetitionMenu.setAutoBack(true);
         return UneCompetitionMenu;
     }
@@ -88,4 +89,4 @@ public class listCompetition {
         });
     }
 }
-}
+

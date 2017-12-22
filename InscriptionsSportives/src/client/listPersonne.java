@@ -18,7 +18,7 @@ public class listPersonne {
     // Returns the list to print
     private List<String> getPersonneList()
     {
-        List<String> liste = new List<>("SÃ©lectionner quelqu'un",
+        List<String> liste = new List<>("Sélectionner une personne: ",
                 getListDataPeople(),
                 getOptionListePeople());
         liste.setAutoBack(false);
@@ -58,6 +58,7 @@ public class listPersonne {
         Menu someoneMenu = new Menu(someone);
         someoneMenu.add(getDisplaySomeoneOption(someone));
         someoneMenu.add(getDeleteSomeoneOption(someone));
+        someoneMenu.addBack("b");
         someoneMenu.setAutoBack(true);
         return someoneMenu;
     }
