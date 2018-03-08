@@ -17,9 +17,10 @@
 
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="hibernate.entity.Competition" />
-        <mapping class="hibernate.entity.Equipe" />
-        <mapping class="hibernate.entity.Personne" />
+        <mapping class="hibernate.Competition" />
+        <mapping class="hibernate.Candidat" />
+        <mapping class="hibernate.Equipe" />
+        <mapping class="hibernate.Personne" />
 
     </session-factory>
 </hibernate-configuration>

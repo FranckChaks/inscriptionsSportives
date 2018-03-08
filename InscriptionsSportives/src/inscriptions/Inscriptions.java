@@ -13,6 +13,9 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import commandLineMenus.*;
 import client.MenuInscription;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 /**
  * Point d'entrée dans l'application, un seul objet de type Inscription
  * permet de gérer les compétitions, candidats (de type equipe ou personne)
@@ -241,7 +244,17 @@ public class Inscriptions implements Serializable
 	}
 	
 	public static void main(String[] args)
-	{
+	{		
+		 try
+		  {
+			 Session s = getSession();
+		  }
+		  catch (HibernateException ex)
+		  {
+			  throw new RuntimeException("Probleme de configuration : "
+					  + ex.getMessage(), ex);
+		  }
+		 
 		Inscriptions inscriptions = Inscriptions.getInscriptions();
 		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", LocalDate.now(), false); //LocalDate.now() = DateCloture
 		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"), 
