@@ -102,7 +102,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				listCompetition(competition);
+				List<Competition> newComp = new listCompetition comp;
 			}
 		};
 	}
