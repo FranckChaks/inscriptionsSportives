@@ -4,16 +4,36 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.*;
+import org.hibernate.*;
+
 /**
  * Représente une personne physique pouvant s'inscrire à une compétition.
  */
 
+@Entity
 public class Personne extends Candidat
 {
 	private static final long serialVersionUID = 4434646724271327254L;
-	private String prenom, mail;
 	private Set<Equipe> equipes;
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id_p")
+	private int id_p;
+	
+	@Column(name = "prenom_p")
+	private String prenom;
+	
+	@Column(name = "nom_p")
+	private String nom;
+
+	@Column(name = "mail_p")
+	private String mail;
 	Personne(Inscriptions inscriptions, String nom, String prenom, String mail)
 	{
 		super(inscriptions, nom);

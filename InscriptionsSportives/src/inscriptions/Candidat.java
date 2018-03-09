@@ -5,17 +5,33 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import javax.persistence.*;
+import org.hibernate.*;
+
 /**
  * Candidat à un événement sportif, soit une personne physique, soit une équipe.
  *
  */
 
+@Entity
 public abstract class Candidat implements Comparable<Candidat>, Serializable
 {
 	private static final long serialVersionUID = -6035399822298694746L;
 	private Inscriptions inscriptions;
-	private String nom;
 	private Set<Competition> competitions;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id_cand")
+	private int id_cand;
+
+	@Column(name = "nom_cand")
+	private String nom;
 	
 	Candidat(Inscriptions inscriptions, String nom)
 	{

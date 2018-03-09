@@ -6,21 +6,40 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.*;
+import org.hibernate.*;
+
 /**
  * Représente une compétition, c'est-à-dire un ensemble de candidats 
  * inscrits à un événement, les inscriptions sont closes à la date dateCloture.
  *
  */
 
+@Entity
 public class Competition implements Comparable<Competition>, Serializable
 {
 	private static final long serialVersionUID = -2882150118573759729L;
 	private Inscriptions inscriptions;
-	private String nom;
 	private Set<Candidat> candidats;
-	public LocalDate dateCloture;
-	private boolean enEquipe = false;
 	public LocalDate dateSystem = LocalDate.now();
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id_comp")
+	private int id_comp;
+	
+	@Column(name = "nom_comp")
+	private String nom;
+
+	@Column(name = "enEquipe")
+	private boolean enEquipe = false;
+	
+	@Column(name = "dateCloture")
+	private LocalDate dateCloture;
 	
 	Competition(Inscriptions inscriptions, String nom, LocalDate dateCloture, boolean enEquipe)
 	{

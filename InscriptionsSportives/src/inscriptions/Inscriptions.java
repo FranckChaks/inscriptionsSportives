@@ -12,10 +12,13 @@ import java.time.LocalDate;
 import java.util.SortedSet;
 import java.util.TreeSet;
 import commandLineMenus.*;
+import hibernate.StandardServiceRegistryBuilder;
 import client.MenuInscription;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 /**
  * Point d'entrée dans l'application, un seul objet de type Inscription
  * permet de gérer les compétitions, candidats (de type equipe ou personne)
@@ -242,6 +245,17 @@ public class Inscriptions implements Serializable
 		return "Candidats : " + getCandidats().toString()
 			+ "\nCompetitions  " + getCompetitions().toString();
 	}
+	
+	private static Session getSession() throws HibernateException
+	 {
+	  Configuration configuration = new Configuration()
+	    .configure("src/hibernate.cfg.xml");
+	  ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
+	    .applySettings(configuration.getProperties()).build();
+	  SessionFactory sessionFactory = configuration
+	    .buildSessionFactory(serviceRegistry);
+	  return sessionFactory.openSession();
+	 }
 	
 	public static void main(String[] args)
 	{		
