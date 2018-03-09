@@ -18,6 +18,7 @@ import org.hibernate.*;
  */
 
 @Entity
+@Table(name = "equipe")
 public class Equipe extends Candidat
 {
 	private static final long serialVersionUID = 4147819927233466035L;
@@ -30,6 +31,15 @@ public class Equipe extends Candidat
 	
 	@Column(name = "nom_equipe")
 	private String nom;
+	
+
+	 @ManyToMany(cascade = { CascadeType.ALL })
+	 @JoinTable(
+	name = "Appartenir",
+	joinColumns = { @JoinColumn(name = "id_e") },
+	inverseJoinColumns = { @JoinColumn(name = "id_p") })
+	
+	private SortedSet<Personne> personnes = new TreeSet<>();
 	
 	Equipe(Inscriptions inscriptions, String nom)
 	{

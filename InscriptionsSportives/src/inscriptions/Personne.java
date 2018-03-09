@@ -16,10 +16,11 @@ import org.hibernate.*;
  */
 
 @Entity
+@Table(name = "personne")
 public class Personne extends Candidat
 {
 	private static final long serialVersionUID = 4434646724271327254L;
-	private Set<Equipe> equipes;
+	
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -34,6 +35,14 @@ public class Personne extends Candidat
 
 	@Column(name = "mail_p")
 	private String mail;
+	
+	@ManyToMany(cascade = { CascadeType.ALL })
+	 @JoinTable(
+	name = "Rattacher",
+	joinColumns = { @JoinColumn(name = "id_p") },
+	inverseJoinColumns = { @JoinColumn(name = "id_e") })
+	private Set<Equipe> equipes;
+	
 	Personne(Inscriptions inscriptions, String nom, String prenom, String mail)
 	{
 		super(inscriptions, nom);

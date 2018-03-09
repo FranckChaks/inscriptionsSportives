@@ -20,11 +20,11 @@ import org.hibernate.*;
  */
 
 @Entity
+@Table(name = "competition")
 public class Competition implements Comparable<Competition>, Serializable
 {
 	private static final long serialVersionUID = -2882150118573759729L;
 	private Inscriptions inscriptions;
-	private Set<Candidat> candidats;
 	public LocalDate dateSystem = LocalDate.now();
 	
 	@Id
@@ -40,6 +40,12 @@ public class Competition implements Comparable<Competition>, Serializable
 	
 	@Column(name = "dateCloture")
 	private LocalDate dateCloture;
+	
+	@ManyToMany(cascade = { CascadeType.ALL })
+	@JoinTable(name = "Inscrire",
+	joinColumns = {@JoinColumn(name = "id_comp")},
+	inverseJoinColumns = {@JoinColumn(name = "id_cand")})
+	private Set<Candidat> candidats;
 	
 	Competition(Inscriptions inscriptions, String nom, LocalDate dateCloture, boolean enEquipe)
 	{
