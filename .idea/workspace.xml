@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4284ce5f-84f7-4024-9a13-0996e24e8563" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Passerelle.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-commons-annotations-4.0.2.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-core-4.2.21.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jboss-logging-3.1.0.GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inscriptionsSportives.iml" afterPath="$PROJECT_DIR$/.idea/inscriptionsSportives.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -31,27 +33,48 @@
       <file leaf-file-name="Inscriptions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6077">
-              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="268">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
-                <element signature="e#3048#3049#0" expanded="true" />
-                <element signature="e#3081#3082#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Passerelle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Passerelle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Passerelle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1975">
-              <caret line="84" column="74" lean-forward="false" selection-start-line="84" selection-start-column="74" selection-end-line="84" selection-end-column="74" />
+            <state relative-caret-position="364">
+              <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1534#1535#0" expanded="true" />
                 <element signature="e#2012#2042#0" expanded="true" />
                 <element signature="e#2237#2267#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Candidat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Candidat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+              <folding>
+                <marker date="1522395253120" expanded="true" signature="879:958" ph="@{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Equipe.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,7 +83,7 @@
       <file leaf-file-name="MenuInscription.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
+            <state relative-caret-position="156">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
@@ -81,7 +104,7 @@
       <file leaf-file-name="listEquipe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listEquipe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
+            <state relative-caret-position="468">
               <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
               <folding />
@@ -92,7 +115,7 @@
       <file leaf-file-name="listPersonne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="494">
               <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
@@ -186,7 +209,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,6 +258,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -243,8 +266,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/../CommandLine" />
@@ -517,7 +540,8 @@
       <workItem from="1513351854647" duration="1969000" />
       <workItem from="1513355581332" duration="564000" />
       <workItem from="1513930426901" duration="10975000" />
-      <workItem from="1522404359368" duration="2588000" />
+      <workItem from="1522404359368" duration="4319000" />
+      <workItem from="1522412868299" duration="1056000" />
     </task>
     <task id="LOCAL-00001" summary="first commit IntellIJ">
       <created>1510933912831</created>
@@ -547,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522406335300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed but still a dependancy problem">
+      <created>1522410925836</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522410925836</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31755000" />
+    <option name="totallyTimeSpent" value="34542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -634,16 +665,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-702">
@@ -665,8 +686,7 @@
         <state relative-caret-position="-93">
           <caret line="76" column="8" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
           <folding>
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3081#3082#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -887,64 +907,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Candidat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1522395253120" expanded="true" signature="879:958" ph="@{...}" />
-            <marker date="1522395253120" expanded="true" signature="1083:1176" ph="{...}" />
-            <marker date="1522395253120" expanded="true" signature="1179:1232" ph="/**...*/" />
-            <marker date="1522395253120" expanded="false" signature="1258:1264" ph=" { " />
-            <marker date="1522395253120" expanded="false" signature="1275:1278" ph=" }" />
-            <marker date="1522395253120" expanded="true" signature="1281:1336" ph="/**...*/" />
-            <marker date="1522395253120" expanded="false" signature="1370:1376" ph=" { " />
-            <marker date="1522395253120" expanded="false" signature="1391:1394" ph=" }" />
-            <marker date="1522395253120" expanded="true" signature="1397:1491" ph="/**...*/" />
-            <marker date="1522395253120" expanded="false" signature="1535:1541" ph=" { " />
-            <marker date="1522395253120" expanded="false" signature="1590:1593" ph=" }" />
-            <marker date="1522395253120" expanded="false" signature="1633:1639" ph=" { " />
-            <marker date="1522395253120" expanded="false" signature="1676:1679" ph=" }" />
-            <marker date="1522395253120" expanded="false" signature="1721:1727" ph=" { " />
-            <marker date="1522395253120" expanded="false" signature="1767:1770" ph=" }" />
-            <marker date="1522395253120" expanded="true" signature="1773:1824" ph="/**...*/" />
-            <marker date="1522395253120" expanded="true" signature="1850:1939" ph="{...}" />
-            <marker date="1522395253120" expanded="false" signature="1986:1992" ph=" { " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/Interface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/Interface.java" />
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listEquipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
+        <state relative-caret-position="468">
           <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
           <folding />
@@ -953,7 +919,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="494">
           <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
@@ -967,43 +933,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java">
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6077">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3081#3082#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="156">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="381">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Passerelle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1975">
-          <caret line="84" column="74" lean-forward="false" selection-start-line="84" selection-start-column="74" selection-end-line="84" selection-end-column="74" />
+        <state relative-caret-position="364">
+          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
             <element signature="e#2012#2042#0" expanded="true" />
             <element signature="e#2237#2267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Candidat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <folding>
+            <marker date="1522395253120" expanded="true" signature="879:958" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1025,7 +1027,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate</last-edited>
+          <last-edited>Hibernate (inscriptionsSportives)|Hibernate</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1048,7 +1050,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9.0</last-edited>
+          <last-edited>9.0 (1)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1060,7 +1062,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>inscriptionsSportives</last-edited>
+          <last-edited>Hibernate|inscriptionsSportives</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
