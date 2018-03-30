@@ -29,8 +29,8 @@ public class Equipe extends Candidat
 	@Column(name = "id_e")
 	private int id_e;
 	
-	@Column(name = "nom_equipe")
-	private String nom;
+	@Column(name = "nom_e")
+	private String nom_e;
 	
 
 	 @ManyToMany(cascade = { CascadeType.ALL })

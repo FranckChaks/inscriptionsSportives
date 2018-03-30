@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 15 déc. 2017 à 08:18
+-- Généré le :  ven. 30 mars 2018 à 12:55
 -- Version du serveur :  5.7.19
--- Version de PHP :  7.1.9
+-- Version de PHP :  5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -59,6 +59,7 @@ CREATE TABLE IF NOT EXISTS `competition` (
 DROP TABLE IF EXISTS `equipe`;
 CREATE TABLE IF NOT EXISTS `equipe` (
   `id_e` int(11) NOT NULL AUTO_INCREMENT,
+  `nom_e` varchar(50) NOT NULL,
   `id_cand` int(11) NOT NULL,
   PRIMARY KEY (`id_e`,`id_cand`),
   KEY `FK_Equipe_id_cand` (`id_cand`)
@@ -81,11 +82,11 @@ CREATE TABLE IF NOT EXISTS `inscription` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `equipe`
+-- Structure de la table `personne`
 --
 
-DROP TABLE IF EXISTS `equipe`;
-CREATE TABLE IF NOT EXISTS `equipe` (
+DROP TABLE IF EXISTS `personne`;
+CREATE TABLE IF NOT EXISTS `personne` (
   `id_p` int(11) NOT NULL AUTO_INCREMENT,
   `prenom_p` varchar(255) DEFAULT NULL,
   `mail_p` varchar(255) DEFAULT NULL,
@@ -112,9 +113,9 @@ ALTER TABLE `inscription`
   ADD CONSTRAINT `FK_Inscription_id_comp` FOREIGN KEY (`id_comp`) REFERENCES `competition` (`id_comp`);
 
 --
--- Contraintes pour la table `equipe`
+-- Contraintes pour la table `personne`
 --
-ALTER TABLE `equipe`
+ALTER TABLE `personne`
   ADD CONSTRAINT `FK_Personne_id_cand` FOREIGN KEY (`id_cand`) REFERENCES `candidat` (`id_cand`);
 COMMIT;
 

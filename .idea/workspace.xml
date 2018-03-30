@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4284ce5f-84f7-4024-9a13-0996e24e8563" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-commons-annotations-4.0.2.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-core-4.2.21.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jboss-logging-3.1.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inscriptionsSportives.iml" afterPath="$PROJECT_DIR$/.idea/inscriptionsSportives.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inscriptionssportive.sql" afterPath="$PROJECT_DIR$/inscriptionssportive.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,8 +66,8 @@
       <file leaf-file-name="Equipe.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            <state relative-caret-position="130">
+              <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,7 +78,7 @@
       <file leaf-file-name="MenuInscription.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="26">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
@@ -178,6 +173,7 @@
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Passerelle.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java" />
       </list>
     </option>
   </component>
@@ -541,7 +537,7 @@
       <workItem from="1513355581332" duration="564000" />
       <workItem from="1513930426901" duration="10975000" />
       <workItem from="1522404359368" duration="4319000" />
-      <workItem from="1522412868299" duration="1056000" />
+      <workItem from="1522412868299" duration="1648000" />
     </task>
     <task id="LOCAL-00001" summary="first commit IntellIJ">
       <created>1510933912831</created>
@@ -578,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522410925836</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed dependency problems (hopefully)">
+      <created>1522414024671</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522414024671</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34542000" />
+    <option name="totallyTimeSpent" value="35134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -658,7 +661,8 @@
     <MESSAGE value="Ajout de listPersonne" />
     <MESSAGE value="Remove 2nd classpath" />
     <MESSAGE value="Fixed but still a dependancy problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed but still a dependancy problem" />
+    <MESSAGE value="Fixed dependency problems (hopefully)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed dependency problems (hopefully)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -933,22 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -1000,10 +988,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="130">
+          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
