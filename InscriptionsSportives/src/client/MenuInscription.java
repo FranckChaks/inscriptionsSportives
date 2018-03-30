@@ -8,8 +8,9 @@ import commandLineMenus.*;
 import commandLineMenus.rendering.examples.util.InOut;
 import inscriptions.*;
 
+
 public class MenuInscription {
-	
+
 	static Scanner sc = new Scanner(System.in);
 
 	

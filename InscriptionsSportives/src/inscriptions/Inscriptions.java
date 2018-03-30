@@ -2,12 +2,6 @@ package inscriptions;
 
 import client.MenuInscription;
 import commandLineMenus.Menu;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -240,33 +234,14 @@ public class Inscriptions implements Serializable
 		return "Candidats : " + getCandidats().toString()
 			+ "\nCompetitions  " + getCompetitions().toString();
 	}
-	
-	private static Session getSession() throws HibernateException
-	 {
-	  Configuration configuration = new Configuration()
-	    .configure("src/hibernate.cfg.xml");
-	  ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-	    .applySettings(configuration.getProperties()).build();
-	  SessionFactory sessionFactory = configuration
-	    .buildSessionFactory(serviceRegistry);
-	  return sessionFactory.openSession();
-	 }
+
 	
 	public static void main(String[] args)
-	{		
-		 try
-		  {
-			 Session s = getSession();
-		  }
-		  catch (HibernateException ex)
-		  {
-			  throw new RuntimeException("Probleme de configuration : "
-					  + ex.getMessage(), ex);
-		  }
-		 
+	{
+
 		Inscriptions inscriptions = Inscriptions.getInscriptions();
 		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", LocalDate.now(), false); //LocalDate.now() = DateCloture
-		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"), 
+		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"),
 				boris = inscriptions.createPersonne("Boris", "le Hachoir", "ytreza");
 		flechettes.add(tony);
 		Equipe lesManouches = inscriptions.createEquipe("Les Manouches");
@@ -279,14 +254,14 @@ public class Inscriptions implements Serializable
 		menu.start();
 
 		/////////////---FIN MENU---\\\\\\\\\\\\\
-		
+
 		System.out.println(inscriptions);
 		lesManouches.delete();
 		System.out.println(inscriptions);
 		try
 		{
 			inscriptions.sauvegarder();
-		} 
+		}
 		catch (IOException e)
 		{
 			System.out.println("Sauvegarde impossible." + e);
