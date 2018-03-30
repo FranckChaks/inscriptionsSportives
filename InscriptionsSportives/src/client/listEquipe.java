@@ -16,7 +16,7 @@ public class listEquipe {
     // Returns the list to print
     private List<String> getCompetitionList()
     {
-        List<String> liste = new List<>("Sélectionner une équipe: ",
+        List<String> liste = new List<>("SÃ©lectionner une Ã©quipe: ",
                 getListDataEquipe(),
                 getOptionListeEquipe());
         liste.setAutoBack(false);

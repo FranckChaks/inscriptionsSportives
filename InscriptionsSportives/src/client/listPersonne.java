@@ -18,7 +18,7 @@ public class listPersonne {
     // Returns the list to print
     private List<String> getPersonneList()
     {
-        List<String> liste = new List<>("Sélectionner une personne: ",
+        List<String> liste = new List<>("SÃ©lectionner une personne: ",
                 getListDataPeople(),
                 getOptionListePeople());
         liste.setAutoBack(false);

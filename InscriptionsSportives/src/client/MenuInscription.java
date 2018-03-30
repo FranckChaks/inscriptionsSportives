@@ -1,5 +1,6 @@
 package client;
 
+import java.rmi.UnexpectedException;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -23,7 +24,7 @@ public class MenuInscription {
 //--------------MENU COMPETITION-------------\\
 //--------------------------------------------\\
 	static Menu getCompetitionMenu() {
-		Menu competitionMenu = new Menu("Menu des compétitions", "Competition", "c");
+		Menu competitionMenu = new Menu("Menu des compÃ©titions", "Competition", "c");
 		competitionMenu.add(getAddCompOption());
 		competitionMenu.add(getDisplayCompOption());
 		competitionMenu.add(getGestionCompetitionMenu());
@@ -35,7 +36,7 @@ public class MenuInscription {
 	
 	static Option getAddCompOption()
 	{
-		Option addComp = new Option("Ajouter une compétition", "1", 
+		Option addComp = new Option("Ajouter une compÃ©tition", "1",
 				getAddCompetition());
 		return addComp;
 	}
@@ -45,12 +46,12 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				String a = InOut.getString("Nom de la compétition: ");
+				String a = InOut.getString("Nom de la compÃ©tition: ");
 				System.out.println("Date de cloture:");
 				int jour = InOut.getInt("	Jour: ");
 				int mois = InOut.getInt("	Mois: ");
-				int annee = InOut.getInt("	Année: ");
-				int c = InOut.getInt("En équipe (0 pour Non, 1 pour oui)? ");
+				int annee = InOut.getInt("	AnnÃ©e: ");
+				int c = InOut.getInt("En Ã©quipe (0 pour Non, 1 pour oui)? ");
 				boolean d = false;
 				if(c == 1)
 					d = true;
@@ -66,7 +67,7 @@ public class MenuInscription {
 	
 	static Option getDisplayCompOption()
 	{
-		Option displayComp = new Option("Afficher les compétitions", "2", 
+		Option displayComp = new Option("Afficher les compÃ©titions", "2",
 				getDisplayCompetition());
 		return displayComp;
 	}
@@ -76,41 +77,41 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				listCompetition(competition);	//TODO
+					//TODO
 			}
 		};
 	}
-	//-----------Menu gestion compétition----------\\
+	//-----------Menu gestion compÃ©tition----------\\
 	static Menu getGestionCompetitionMenu() {
-		Menu gestionCompetition = new Menu("Gestion des compétitions", "Gestion des compétitions","3");
+		Menu gestionCompetition = new Menu("Gestion des compÃ©titions", "Gestion des compÃ©titions","3");
 		gestionCompetition.add(getDeleteCompOption());
 		gestionCompetition.add(getModifyCompOption());
 		gestionCompetition.addBack("3");
 		return gestionCompetition;
 	}
 	
-	//------Supprimer Compétition-------\\
+	//------Supprimer CompÃ©tition-------\\
 	static Option getDeleteCompOption()
 	{
-		Option deleteComp = new Option("Supprimer une compétition","1",
+		Option deleteComp = new Option("Supprimer une compÃ©tition","1",
 				getDeleteCompetition());
 		return deleteComp;
 	}
-	
+
 	static Action getDeleteCompetition() {
 		return new Action()
 		{
 			public void optionSelected()
 			{
-				List<Competition> newComp = new listCompetition comp;
+
 			}
 		};
 	}
 	
-	//------Modifier Compétition-------\\
+	//------Modifier CompÃ©tition-------\\
 	static Option getModifyCompOption()
 	{
-		Option modifyComp = new Option("Modifier une compétition","2",
+		Option modifyComp = new Option("Modifier une compÃ©tition","2",
 				getModifyCompetition());
 		return modifyComp;
 	}
@@ -120,7 +121,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				listCompetition(competition);
+
 			}
 		};
 	}
@@ -133,7 +134,7 @@ public class MenuInscription {
 	//--------------MENU EQUIPE----------------\\\
 	
 		static Menu getEquipeMenu() {
-			Menu equipeMenu = new Menu("Menu des équipes", "Equipes", "e");
+			Menu equipeMenu = new Menu("Menu des Ã©quipes", "Equipes", "e");
 			equipeMenu.add(getAddEquipeOption());
 			equipeMenu.add(getDisplayEquipeOption());
 			equipeMenu.add(getGestionEquipeMenu());
@@ -145,7 +146,7 @@ public class MenuInscription {
 		
 	static Option getAddEquipeOption()
 	{
-		Option addEquipe = new Option("Ajouter une équipe", "1", 
+		Option addEquipe = new Option("Ajouter une Ã©quipe", "1",
 				getAddEquipe());
 		return addEquipe;
 	}
@@ -155,7 +156,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				String a = InOut.getString("Nom de l'équipe: ");
+				String a = InOut.getString("Nom de l'Ã©quipe: ");
 				Inscriptions.getInscriptions().createEquipe(a);	
 			}
 		};
@@ -165,7 +166,7 @@ public class MenuInscription {
 	
 	static Option getDisplayEquipeOption()
 	{
-		Option displayEquipe = new Option("Afficher les équipes", "2", 
+		Option displayEquipe = new Option("Afficher les Ã©quipes", "2",
 				getDisplayEquipe());
 		return displayEquipe;
 	}
@@ -175,13 +176,13 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				listEquipe(equipe);
+
 			}
 		};
 	}
-	//-----------Menu gestion équipe----------\\
+	//-----------Menu gestion Ã©quipe----------\\
 	static Menu getGestionEquipeMenu() {
-		Menu gestionEquipe = new Menu("Gestion des équipes", "Gestion des équipes","3");
+		Menu gestionEquipe = new Menu("Gestion des Ã©quipes", "Gestion des Ã©quipes","3");
 		gestionEquipe.add(getDeleteEquipeOption());
 		gestionEquipe.add(getModifyEquipeOption());
 		gestionEquipe.addBack("3");
@@ -191,7 +192,7 @@ public class MenuInscription {
 	//------Supprimer Equipe-------\\
 	static Option getDeleteEquipeOption()
 	{
-		Option deleteEquipe = new Option("Supprimer une équipe","1",
+		Option deleteEquipe = new Option("Supprimer une Ã©quipe","1",
 				getDeleteEquipe());
 		return deleteEquipe;
 	}
@@ -201,7 +202,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				listEquipe(equipe);
+
 			}
 		};
 	}
@@ -209,7 +210,7 @@ public class MenuInscription {
 	//------Modifier Equipe-------\\
 	static Option getModifyEquipeOption()
 	{
-		Option modifyEquipe= new Option("Modifier une équipe","2",
+		Option modifyEquipe= new Option("Modifier une Ã©quipe","2",
 				getModifyEquipe());
 		return modifyEquipe;
 	}
@@ -219,7 +220,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				listEquipe(equipe);
+
 			}
 		};
 	}
@@ -253,7 +254,7 @@ public class MenuInscription {
 				public void optionSelected()
 				{
 					String a = InOut.getString("Nom de la personne: ");
-					String b = InOut.getString("Prénom de la personne: ");
+					String b = InOut.getString("PrÃ©nom de la personne: ");
 					String c = InOut.getString("Adresse e-mail de la personne: ");
 					Inscriptions.getInscriptions().createPersonne(a, b, c);	
 				}
@@ -274,7 +275,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-					listPersonne(personne);
+
 				}
 			};
 		}
@@ -300,7 +301,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-					listPersonne(personne);
+
 				}
 			};
 		}
@@ -318,7 +319,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-					listPersonne(personne);
+
 				}
 			};
 		}

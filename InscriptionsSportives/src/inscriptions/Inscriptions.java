@@ -1,24 +1,19 @@
 package inscriptions;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.time.LocalDate;
-import java.util.SortedSet;
-import java.util.TreeSet;
-import commandLineMenus.*;
-import hibernate.StandardServiceRegistryBuilder;
 import client.MenuInscription;
+import commandLineMenus.Menu;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+import java.io.*;
+import java.time.LocalDate;
+import java.util.Collections;
+import java.util.SortedSet;
+import java.util.TreeSet;
 /**
  * Point d'entrée dans l'application, un seul objet de type Inscription
  * permet de gérer les compétitions, candidats (de type equipe ou personne)
@@ -277,12 +272,12 @@ public class Inscriptions implements Serializable
 		Equipe lesManouches = inscriptions.createEquipe("Les Manouches");
 		lesManouches.add(boris);
 		lesManouches.add(tony);
-		
+
 		//////////////---MENU---\\\\\\\\\\\\\\\
-		
+
 		Menu menu = MenuInscription.getHelloMenu();
-		menu.start(); 
-		
+		menu.start();
+
 		/////////////---FIN MENU---\\\\\\\\\\\\\
 		
 		System.out.println(inscriptions);
