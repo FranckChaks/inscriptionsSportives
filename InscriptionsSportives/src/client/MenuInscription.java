@@ -2,18 +2,22 @@ package client;
 
 import java.rmi.UnexpectedException;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import commandLineMenus.*;
 import commandLineMenus.rendering.examples.util.InOut;
 import inscriptions.*;
+import inscriptions.Candidat;
+import inscriptions.Competition;
+import inscriptions.Equipe;
+import inscriptions.Inscriptions;
+import inscriptions.Personne;
 
 
 public class MenuInscription {
 
 	static Scanner sc = new Scanner(System.in);
-
+	
 	
 	public static Menu getHelloMenu() {
 		Menu helloMenu = new Menu("Inscriptions Sportives");
@@ -66,7 +70,7 @@ public class MenuInscription {
 	}
 
 /////////---AFFICHER COMPETITION---\\\\\\\\\\\\
-
+	
 	static Option getDisplayCompOption()
 	{
 		Option displayComp = new Option("Afficher les compétitions", "2",
@@ -79,7 +83,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-				Inscriptions.getInscriptions().getCompetitions();
+				System.out.println(Inscriptions.getInscriptions().getCompetitions());
 			}
 		};
 	}
@@ -178,7 +182,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-
+				System.out.println(Inscriptions.getInscriptions().getEquipes());
 			}
 		};
 	}
@@ -277,7 +281,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-				
+					System.out.println(Inscriptions.getInscriptions().getPersonnes());
 				}
 			};
 		}
