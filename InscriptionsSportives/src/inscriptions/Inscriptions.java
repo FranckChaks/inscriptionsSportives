@@ -240,21 +240,7 @@ public class Inscriptions implements Serializable
 	}
 
 	
-	public class PremiersJButtons
-	{
-	 public PremiersJButtons()
-	 {
-	  JFrame frame = new JFrame();
-	  frame.setTitle("My second window !");
-	  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	  frame.getContentPane().setLayout(new FlowLayout());
-	  frame.getContentPane().add(new JButton("my First JButton"));
-	  frame.getContentPane().add(new JButton("my Second JButton"));
-	  frame.getContentPane().add(new JButton("my Third JButton"));
-	  frame.setVisible(true);
-	  frame.pack();
-	 }
-	}
+	
 	public static void main(String[] args)
 	{
 		Inscriptions inscriptions = Inscriptions.getInscriptions();
@@ -271,7 +257,7 @@ public class Inscriptions implements Serializable
 
 		
 		//////////////---MENU---\\\\\\\\\\\\\\\
-
+		
 		Menu menu = MenuInscription.getHelloMenu();
 		menu.start();
 		
