@@ -35,7 +35,7 @@ public class Equipe extends Candidat
 
 	 @ManyToMany(cascade = { CascadeType.ALL })
 	 @JoinTable(
-	name = "Appartenir",
+	name = "appartenir",
 	joinColumns = { @JoinColumn(name = "id_e") },
 	inverseJoinColumns = { @JoinColumn(name = "id_p") })
 	

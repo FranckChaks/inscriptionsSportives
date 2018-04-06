@@ -36,7 +36,7 @@ public class Inscriptions implements Serializable
 	 * @return
 	 */
 	
-	public SortedSet<Competition> getCompetitions()
+	public  SortedSet<Competition> getCompetitions()
 	{
 		return Collections.unmodifiableSortedSet(competitions);
 	}
