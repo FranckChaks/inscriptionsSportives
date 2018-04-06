@@ -2,6 +2,7 @@ package client;
 
 import java.rmi.UnexpectedException;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import commandLineMenus.*;
@@ -65,7 +66,7 @@ public class MenuInscription {
 	}
 
 /////////---AFFICHER COMPETITION---\\\\\\\\\\\\
-	
+
 	static Option getDisplayCompOption()
 	{
 		Option displayComp = new Option("Afficher les compétitions", "2",
@@ -78,7 +79,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-					//TODO
+				Inscriptions.getInscriptions().getCompetitions();
 			}
 		};
 	}
@@ -276,7 +277,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-
+				
 				}
 			};
 		}
