@@ -2,6 +2,7 @@ package inscriptions;
 
 import client.MenuInscription;
 import commandLineMenus.Menu;
+import hibernate.Hibernate;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -239,24 +240,25 @@ public class Inscriptions implements Serializable
 			+ "\nCompetitions  " + getCompetitions().toString();
 	}
 
-	
-	public class PremiersJButtons
-	{
-	 public PremiersJButtons()
-	 {
-	  JFrame frame = new JFrame();
-	  frame.setTitle("My second window !");
-	  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	  frame.getContentPane().setLayout(new FlowLayout());
-	  frame.getContentPane().add(new JButton("my First JButton"));
-	  frame.getContentPane().add(new JButton("my Second JButton"));
-	  frame.getContentPane().add(new JButton("my Third JButton"));
-	  frame.setVisible(true);
-	  frame.pack();
-	 }
+	public static void start() {
+		Hibernate.open();
 	}
+
+	public static void saveEntity(Object o){
+		Hibernate.save(o);
+	}
+
+	public static void removeEntity(Object o){
+		Hibernate.delete(o);
+	}
+
 	public static void main(String[] args)
 	{
+
+		Hibernate lien = new Hibernate();
+		lien.open();
+		lien.close();
+		
 		Inscriptions inscriptions = Inscriptions.getInscriptions();
 		
 		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", LocalDate.now(), false); //LocalDate.now() = DateCloture
