@@ -7,12 +7,17 @@ import java.util.Scanner;
 import commandLineMenus.*;
 import commandLineMenus.rendering.examples.util.InOut;
 import inscriptions.*;
+import inscriptions.Candidat;
+import inscriptions.Competition;
+import inscriptions.Equipe;
+import inscriptions.Inscriptions;
+import inscriptions.Personne;
 
 
 public class MenuInscription {
 
 	static Scanner sc = new Scanner(System.in);
-
+	
 	
 	public static Menu getHelloMenu() {
 		Menu helloMenu = new Menu("Inscriptions Sportives");
@@ -78,7 +83,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-					//TODO
+				System.out.println(Inscriptions.getInscriptions().getCompetitions());
 			}
 		};
 	}
@@ -177,7 +182,7 @@ public class MenuInscription {
 		{
 			public void optionSelected()
 			{
-
+				System.out.println(Inscriptions.getInscriptions().getEquipes());
 			}
 		};
 	}
@@ -276,7 +281,7 @@ public class MenuInscription {
 			{
 				public void optionSelected()
 				{
-
+					System.out.println(Inscriptions.getInscriptions().getPersonnes());
 				}
 			};
 		}
