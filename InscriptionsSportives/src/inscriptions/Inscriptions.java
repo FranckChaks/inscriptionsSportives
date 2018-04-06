@@ -8,6 +8,10 @@ import java.time.LocalDate;
 import java.util.Collections;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.ArrayList;
 /**
  * Point d'entrée dans l'application, un seul objet de type Inscription
  * permet de gérer les compétitions, candidats (de type equipe ou personne)
@@ -236,9 +240,24 @@ public class Inscriptions implements Serializable
 	}
 
 	
+	public class PremiersJButtons
+	{
+	 public PremiersJButtons()
+	 {
+	  JFrame frame = new JFrame();
+	  frame.setTitle("My second window !");
+	  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	  frame.getContentPane().setLayout(new FlowLayout());
+	  frame.getContentPane().add(new JButton("my First JButton"));
+	  frame.getContentPane().add(new JButton("my Second JButton"));
+	  frame.getContentPane().add(new JButton("my Third JButton"));
+	  frame.setVisible(true);
+	  frame.pack();
+	 }
+	}
 	public static void main(String[] args)
 	{
-
+		
 		Inscriptions inscriptions = Inscriptions.getInscriptions();
 		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", LocalDate.now(), false); //LocalDate.now() = DateCloture
 		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"),
@@ -247,12 +266,16 @@ public class Inscriptions implements Serializable
 		Equipe lesManouches = inscriptions.createEquipe("Les Manouches");
 		lesManouches.add(boris);
 		lesManouches.add(tony);
+		
+		
 
+		
 		//////////////---MENU---\\\\\\\\\\\\\\\
 
 		Menu menu = MenuInscription.getHelloMenu();
 		menu.start();
-
+		
+		  
 		/////////////---FIN MENU---\\\\\\\\\\\\\
 
 		System.out.println(inscriptions);
@@ -267,4 +290,5 @@ public class Inscriptions implements Serializable
 			System.out.println("Sauvegarde impossible." + e);
 		}
 	}
+	
 }
