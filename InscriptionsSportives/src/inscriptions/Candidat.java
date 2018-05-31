@@ -19,18 +19,16 @@ import org.hibernate.*;
  */
 
 @Entity
-@Table(name = "candidat")
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Candidat implements Comparable<Candidat>, Serializable
 {
 	private static final long serialVersionUID = -6035399822298694746L;
 	private Inscriptions inscriptions;
+	
+	@ManyToMany(mappedBy = "candidats")
 	private Set<Competition> competitions;
 	
-	 @ManyToMany(cascade = { CascadeType.ALL })
-	 @JoinTable(
-	name = "Concourir",
-	joinColumns = { @JoinColumn(name = "id_cand") },
-	inverseJoinColumns = { @JoinColumn(name = "id_comp") })
+	 
 					 
 	
 	@Id

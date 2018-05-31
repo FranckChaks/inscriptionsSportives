@@ -18,13 +18,11 @@ import org.hibernate.*;
  */
 
 @Entity
-@Table(name = "equipe")
 public class Equipe extends Candidat
 {
 	private static final long serialVersionUID = 4147819927233466035L;
 	private SortedSet<Personne> membres = new TreeSet<>();
 	
-	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id_e")
 	private int id_e;
@@ -35,10 +33,10 @@ public class Equipe extends Candidat
 
 	 @ManyToMany(cascade = { CascadeType.ALL })
 	 @JoinTable(
-	name = "Appartenir",
-	joinColumns = { @JoinColumn(name = "id_e") },
-	inverseJoinColumns = { @JoinColumn(name = "id_p") })
-	
+	 name = "appartenir",
+	 joinColumns = { @JoinColumn(name = "id_e") },
+	 inverseJoinColumns = { @JoinColumn(name = "id_p") })
+	 @OrderBy("id ASC")
 	private SortedSet<Personne> personnes = new TreeSet<>();
 	
 	Equipe(Inscriptions inscriptions, String nom)

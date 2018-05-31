@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4284ce5f-84f7-4024-9a13-0996e24e8563" name="Default" comment="">
+    <list default="true" id="4284ce5f-84f7-4024-9a13-0996e24e8563" name="Default" comment="fichier config fix">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inscriptionsSportives.iml" afterPath="$PROJECT_DIR$/.idea/inscriptionsSportives.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.log" afterPath="$PROJECT_DIR$/.metadata/.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/version.ini" afterPath="$PROJECT_DIR$/.metadata/version.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/.gitignore" afterPath="$PROJECT_DIR$/InscriptionsSportives/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inscriptionssportive.sql" afterPath="$PROJECT_DIR$/inscriptionssportive.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java" afterPath="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +28,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml">
+      <file leaf-file-name="hibernate.example.cfg.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.example.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state relative-caret-position="260">
+              <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuInscription.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="283" column="86" lean-forward="false" selection-start-line="283" selection-start-column="86" selection-end-line="283" selection-end-column="86" />
+              <folding>
+                <element signature="e#2330#2331#0" expanded="true" />
+                <element signature="e#2409#2410#0" expanded="true" />
+                <element signature="e#4559#4560#0" expanded="true" />
+                <element signature="e#4633#4634#0" expanded="true" />
+                <element signature="e#6843#6844#0" expanded="true" />
+                <element signature="e#6921#6922#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -28,8 +78,8 @@
       <file leaf-file-name="Inscriptions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="-3406">
+              <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,91 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Passerelle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Passerelle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2012#2042#0" expanded="true" />
-                <element signature="e#2237#2267#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Candidat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Candidat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-              <folding>
-                <marker date="1522395253120" expanded="true" signature="879:958" ph="@{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Equipe.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Equipe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuInscription.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listCompetition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-              <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listEquipe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listEquipe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-              <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listPersonne.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Competition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="-131">
+              <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,6 +116,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -162,18 +133,20 @@
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/test/TestCompetitionTest.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/test/TestCompetition.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client2/MenuInscription.java" />
-        <option value="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/listPers.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/persMenu.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/Interface.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/listCompetition.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/listEquipe.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java" />
-        <option value="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java" />
-        <option value="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Passerelle.java" />
-        <option value="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java" />
         <option value="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Passerelle.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Hibernate.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java" />
+        <option value="$PROJECT_DIR$/InscriptionsSportives/.gitignore" />
       </list>
     </option>
   </component>
@@ -184,10 +157,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="990" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -204,7 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,9 +226,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,6 +255,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="test" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\inscriptionsSportives\InscriptionsSportives\src\hibernate" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -289,6 +265,192 @@
       <recent name="D:\workspace\inscriptionsSportives\InscriptionsSportives\src\hibernate" />
       <recent name="D:\workspace\inscriptionsSportives\InscriptionsSportives\src" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/allclasses-frame.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/allclasses-noframe.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Action.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/List.ListActionOrOptionException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/List.ManualOptionAddForbiddenException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/List.NoListDataDefinedException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/List.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/ListAction.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/ListData.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/ListItemRenderer.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/ListOption.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Menu.CollisionException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Menu.ConcurrentExecutionException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Menu.CycleDetectedException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Menu.EmptyMenuException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Menu.ShortcutMissingException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Menu.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/MenuRenderer.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Option.ConcurrentModificationException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Option.NoActionDefinedException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/Option.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Action.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/List.ListActionOrOptionException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/List.ManualOptionAddForbiddenException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/List.NoListDataDefinedException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/List.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/ListAction.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/ListData.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/ListItemRenderer.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/ListOption.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Menu.CollisionException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Menu.ConcurrentExecutionException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Menu.CycleDetectedException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Menu.EmptyMenuException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Menu.ShortcutMissingException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Menu.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/MenuRenderer.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Option.ConcurrentModificationException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Option.NoActionDefinedException.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/class-use/Option.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/package-frame.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/package-summary.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/package-tree.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/commandLineMenus/package-use.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/constant-values.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/help-doc.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-1.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-10.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-11.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-12.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-13.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-14.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-15.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-16.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-2.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-3.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-4.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-5.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-6.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-7.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-8.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index-files/index-9.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/overview-tree.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/doc/serialized-form.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/jar/commandLineMenus.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/javadoc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/src/commandLineMenus/List.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/src/commandLineMenus/ListOption.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/src/commandLineMenus/Menu.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/src/commandLineMenus/MenuRenderer.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/src/commandLineMenus/Option.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/InscriptionsSportives/src/hibernate/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/jar/jar.jardesc</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../CommandLine/CommandLine/jar.jardesc</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -447,6 +609,31 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="client in inscriptionsSportives" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="inscriptionsSportives" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="client" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="inscriptions in inscriptionsSportives" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -472,45 +659,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="test2 in inscriptionsSportives" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="inscriptionsSportives" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test2" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestsJUnit" />
       <item index="1" class="java.lang.String" itemvalue="Application.Inscriptions" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.test2 in inscriptionsSportives" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.inscriptions in inscriptionsSportives" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Interface" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.inscriptions in inscriptionsSportives" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Interface" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.client in inscriptionsSportives" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Inscriptions" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Interface" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestsJUnit" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.inscriptions in inscriptionsSportives" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.test2 in inscriptionsSportives" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.client in inscriptionsSportives" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Interface" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestsJUnit" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.inscriptions in inscriptionsSportives" />
       </list>
     </recent_temporary>
   </component>
@@ -537,7 +699,8 @@
       <workItem from="1513355581332" duration="564000" />
       <workItem from="1513930426901" duration="10975000" />
       <workItem from="1522404359368" duration="4319000" />
-      <workItem from="1522412868299" duration="1648000" />
+      <workItem from="1522412868299" duration="6336000" />
+      <workItem from="1522998884331" duration="5466000" />
     </task>
     <task id="LOCAL-00001" summary="first commit IntellIJ">
       <created>1510933912831</created>
@@ -581,33 +744,61 @@
       <option name="project" value="LOCAL" />
       <updated>1522414024671</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixes">
+      <created>1522414569430</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1522414569430</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fichier config fix">
+      <created>1523002788260</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523002788260</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix v12">
+      <created>1523003979956</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523003979956</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fichier config fix">
+      <created>1523004368033</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1523004368033</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35134000" />
+    <option name="totallyTimeSpent" value="45288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36527622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36527622" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845894" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36527622" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -619,7 +810,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -662,39 +852,16 @@
     <MESSAGE value="Remove 2nd classpath" />
     <MESSAGE value="Fixed but still a dependancy problem" />
     <MESSAGE value="Fixed dependency problems (hopefully)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed dependency problems (hopefully)" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="fix v12" />
+    <MESSAGE value="fichier config fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fichier config fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Personne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="76" column="8" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="962">
@@ -921,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/test/TestsJUnit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -946,25 +1105,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java">
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Hibernate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="208">
+          <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/Passerelle.java">
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2012#2042#0" expanded="true" />
-            <element signature="e#2237#2267#0" expanded="true" />
-          </folding>
+          <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -978,39 +1133,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java">
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Competition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="-4100">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/listPersonne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="285">
+          <caret line="59" column="57" lean-forward="true" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Inscriptions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-3406">
+          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/inscriptions/Equipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="-131">
+          <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/client/MenuInscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="283" column="86" lean-forward="false" selection-start-line="283" selection-start-column="86" selection-end-line="283" selection-end-column="86" />
+          <folding>
+            <element signature="e#2330#2331#0" expanded="true" />
+            <element signature="e#2409#2410#0" expanded="true" />
+            <element signature="e#4559#4560#0" expanded="true" />
+            <element signature="e#4633#4634#0" expanded="true" />
+            <element signature="e#6843#6844#0" expanded="true" />
+            <element signature="e#6921#6922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/hibernate.example.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/src/hibernate/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriptionsSportives/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +1262,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate|inscriptionsSportives</last-edited>
+          <last-edited>inscriptionsSportives</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

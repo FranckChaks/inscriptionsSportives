@@ -13,7 +13,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
-class Hibernate
+public class Hibernate
 {
     private static Session session = null;
     private static SessionFactory sessionFactory = null;

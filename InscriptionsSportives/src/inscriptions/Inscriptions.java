@@ -2,6 +2,7 @@ package inscriptions;
 
 import client.MenuInscription;
 import commandLineMenus.Menu;
+import hibernate.Hibernate;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -36,7 +37,7 @@ public class Inscriptions implements Serializable
 	 * @return
 	 */
 	
-	public SortedSet<Competition> getCompetitions()
+	public  SortedSet<Competition> getCompetitions()
 	{
 		return Collections.unmodifiableSortedSet(competitions);
 	}
@@ -239,10 +240,16 @@ public class Inscriptions implements Serializable
 			+ "\nCompetitions  " + getCompetitions().toString();
 	}
 
-	
-	
+
+
+
 	public static void main(String[] args)
 	{
+
+//		Hibernate lien = new Hibernate();
+//		lien.open();
+//		lien.close();
+		
 		Inscriptions inscriptions = Inscriptions.getInscriptions();
 		
 		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", LocalDate.now(), false); //LocalDate.now() = DateCloture
